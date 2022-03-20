@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="imageOgWidth">165dp</dimen>
+    <dimen name="imageOgHeight">200dp</dimen>
+    <dimen name="imageViciGamingWidth">169dp</dimen>
+    <dimen name="imageViciGamingHeight">163dp</dimen>
+    <dimen name="buttonOgWidth">165dp</dimen>
+    <dimen name="buttonOgHeight">83dp</dimen>
+    <dimen name="buttonViciGamingWidth">165dp</dimen>
+    <dimen name="buttonViciGamingHeight">83dp</dimen>
+    <dimen name="buttonResetWidth">165dp</dimen>
+    <dimen name="buttonResetHeight">83dp</dimen>
+    <dimen name="textViewWidth">361dp</dimen>
+    <dimen name="textViewHeight">102dp</dimen>
+    <dimen name="textSize">75sp</dimen>
+</resources>
