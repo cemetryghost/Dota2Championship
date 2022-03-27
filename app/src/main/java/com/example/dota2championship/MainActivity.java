@@ -11,6 +11,11 @@ public class MainActivity extends AppCompatActivity {
     public Integer counterOg = 0;
     public Integer counterViciGaming = 0;
 
+    public void onTablo() {
+        TextView textView = findViewById(R.id.textView2);
+        textView.setText(counterOg+"  -  "+counterViciGaming);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,27 +25,23 @@ public class MainActivity extends AppCompatActivity {
             counterViciGaming = savedInstanceState.getInt("counterViciGaming");
         }
         setContentView(R.layout.activity_main);
-        TextView textView = findViewById(R.id.textView2);
-        textView.setText(counterOg+"  -  "+counterViciGaming);
+        onTablo();
     }
 
     public void onClickOg(View view) {
         counterOg++;
-        TextView textView = findViewById(R.id.textView2);
-        textView.setText(counterOg+"  -  "+counterViciGaming);
+        onTablo();
     }
 
     public void onClickViciGaming(View view) {
         counterViciGaming++;
-        TextView textView = findViewById(R.id.textView2);
-        textView.setText(counterOg+"  -  "+counterViciGaming);
+        onTablo();
     }
 
     public void onClickReset(View view){
         counterOg = 0;
         counterViciGaming = 0;
-        TextView textView = findViewById(R.id.textView2);
-        textView.setText(counterOg+"  -  "+counterViciGaming);
+        onTablo();
     }
 
     protected void onSaveInstanceState(Bundle outState)
